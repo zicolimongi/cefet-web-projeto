@@ -1,16 +1,13 @@
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
+<h3><%= @product.name %></h3>
 
-<%= link_to 'Back', products_path %>
+<div class="row">
+  <div class="col-xs-3">
+    <%= image_tag @product.image_link %>
+    <%= @product.description %>
+    <%= @product.price %>
+  </div>
+</div>
+
+<%= link_to 'Voltar', products_path %>

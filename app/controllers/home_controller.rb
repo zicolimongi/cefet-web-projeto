@@ -6,8 +6,4 @@ class HomeController < ApplicationController
   def index
     @products = Product.all.limit(4)
   end
-
-  def contact
-
-  end
 end
