@@ -22,5 +22,5 @@
     <%= f.submit "Logar" %>
   </div>
 <% end %>
-
+<%= link_to 'Login com Facebook', connect_facebook_path, remote: true  %>
 <%= render "devise/shared/links" %>

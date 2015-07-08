@@ -4,7 +4,7 @@ class HomeController < ApplicationController
   protect_from_forgery with: :exception
 
   def index
-
+    @products = Product.all.limit(4)
   end
 
   def contact

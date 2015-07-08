@@ -15,3 +15,14 @@
 //= require bootstrap.min
 //= require turbolinks
 //= require_tree .
+
+var now = new Date
+var greeting = ''
+if(now.getHours < 12)
+  greeting = 'Bom dia !'
+else if(now.getHours < 18)
+  greeting = 'Boa Tarde !'
+else
+  greeting = 'Boa Noite !'
+
+$(".greeting").html(greeting)
