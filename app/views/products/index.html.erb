@@ -1,0 +1,22 @@
+<h1>Listing Products</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td><%= link_to product.name, product %></td>
+        <td><%= link_to product.price, product %></td>
+        <td><%= link_to 'Detalhes', product %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

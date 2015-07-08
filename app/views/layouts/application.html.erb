@@ -10,6 +10,7 @@
     <%= link_to('Sair', destroy_user_session_path,method: :delete) if current_user || current_admin %>
     <%= current_admin.email if current_admin %>
     <%= current_user.email if current_user %>
+    <%= link_to('Gerenciar produtos', adm_products_url) if current_admin %>
     <%= yield %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
