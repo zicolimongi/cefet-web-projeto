@@ -1,0 +1,41 @@
+pt-BR:
+  activerecord:
+    errors: &errors
+      format: ! '%{attribute} %{message}'
+      messages:
+        not_found: não foi encontrado
+        blank: não pode ficar em branco
+        confirmation: não está de acordo com a confirmação
+        empty: não pode ficar vazio
+        equal_to: deve ser igual a %{count}
+        even: deve ser par
+        exclusion: não está disponível
+        greater_than: deve ser maior que %{count}
+        greater_than_or_equal_to: deve ser maior ou igual a %{count}
+        inclusion: não está incluído na lista
+        invalid: não é válido
+        less_than: deve ser menor que %{count}
+        less_than_or_equal_to: deve ser menor ou igual a %{count}
+        not_a_number: não é um número
+        not_an_integer: não é um número inteiro
+        odd: deve ser ímpar
+        record_invalid: ! 'A validação falhou: %{errors}'
+        taken: já está em uso
+        too_long: ! 'é muito longo (máximo: %{count} caracteres)'
+        too_short: ! 'é muito curto (mínimo: %{count} caracteres)'
+        wrong_length: não possui o tamanho esperado (%{count} caracteres)
+        not_saved: Erro ao salvar.
+        invalid: inválido.
+        need_diagnosis: precisa dos campos de diagnóstico preenchidos
+        need_female_fields: padrão e desvio feminino não podem ficar em branco
+        permission_already_exist: "O email \"%{email}\" já possui permissão de \"%{permission}\" nesse pedido."
+        request_not_shared: "Pedido não compartilhado."
+  activerecord:
+    models:
+      user: Usuário
+    attributes:
+      user:
+        email: Email
+        password: Senha
+    errors:
+      <<: *errors

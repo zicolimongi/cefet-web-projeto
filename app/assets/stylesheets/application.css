@@ -11,10 +11,13 @@
  * file per style scope.
  *
  *= require bootstrap.min
- *= require bootstrap-theme.min
  *= require_tree .
  *= require_self
  */
 
 /*Por causa da navbar fixa*/
 body { padding-top: 70px; }
+
+.facebook-connect{
+  height: 34px;
+}
