@@ -15,6 +15,7 @@
 //= require bootstrap.min
 //= require turbolinks
 //= require_tree .
+//= require_self
 
 var now = new Date
 var greeting = ''
@@ -26,3 +27,5 @@ else
   greeting = 'Boa Noite !'
 
 $(".greeting").html(greeting)
+
+window.cart = new ShopCart

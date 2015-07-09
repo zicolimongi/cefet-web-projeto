@@ -36,6 +36,10 @@
           </ul>
           <% if current_user %>
             <ul class="nav navbar-nav navbar-right">
+              <li class='cart'>
+                <span class="badge label-danger cart-number"></span>
+                <%= image_tag "cart.png", class: "cart-image" %>
+              </li>
               <li class="dropdown">
                 <%= link_to "#", class: "dropdown-toggle", "data-toggle" => "dropdown", role: "button", "aria-haspopup" => "true", "aria-expanded" => "false" do %>
                   Menu

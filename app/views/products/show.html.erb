@@ -11,7 +11,13 @@
         <p class="lead"><%= @product.description %></p>
         <p class="text-center price">
         Apenas <%= number_to_currency(@product.price) %></p>
-        <button class="center-block btn btn-success">Comprar</button>
+        <button class="center-block btn btn-success buy-button"
+                data-id= <%= @product.id %>
+                data-name= <%= @product.name %>
+                data-description= "<%= @product.description %>"
+                data-image-link = <%= @product.image_link %>
+                data-price= <%= @product.price %>
+        >Comprar</button>
       </div>
     </div>
   </div>
