@@ -15,7 +15,6 @@ Funcionalidade extras
 - Api HTML 5
   - Validação de formulários
   - Web Storage - Armazenar dados de compra do carrinho
-  - Notifications - Avisar de promoções
 
 - Páginas responsivas
 - Single page usando Rails o turbolinks faz a requisição apenas do body
