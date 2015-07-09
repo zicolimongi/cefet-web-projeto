@@ -42,7 +42,6 @@
                   <span class="caret"></span>
                 <% end -%>
                 <ul class="dropdown-menu">
-                  <li><%= link_to 'Editar Pefil', "#" %></li>
                   <li><%= link_to 'Carrinho de compras', "#" %></li>
                   <li><%= link_to('Sair', destroy_user_session_path, method: :delete) %></li>
                 </ul>
@@ -56,7 +55,6 @@
                   <span class="caret"></span>
                 <% end -%>
                 <ul class="dropdown-menu">
-                  <li><%= link_to 'Editar Pefil', "#" %></li>
                   <li><%= link_to 'Gerenciar produtos', adm_products_path %></li>
                   <li><%= link_to('Sair', destroy_admin_session_path, method: :delete) %></li>
                 </ul>
@@ -64,16 +62,8 @@
             </ul>
           <% else %>
             <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown">
-                <%= link_to "#", class: "dropdown-toggle", "data-toggle" => "dropdown", role: "button", "aria-haspopup" => "true", "aria-expanded" => "false" do %>
-                  Menu
-                  <span class="caret"></span>
-                <% end -%>
-                <ul class="dropdown-menu">
-                  <li><%= link_to 'Login', new_user_session_path %></li>
-                  <li><%= link_to 'Área Restrita', new_admin_session_path %></li>
-                </ul>
-              </li>
+              <li><%= link_to 'Login', new_user_session_path %></li>
+              <li><%= link_to 'Área Restrita', new_admin_session_path %></li>
             </ul>
           <% end -%>
         </div>
